@@ -1,0 +1,41 @@
+package Asst_10prog;
+
+class Box1
+{
+		double length,height,breadth;
+	   //Default constructor
+		Box1()
+		   {
+			   length=breadth=height=0;
+		   }
+	   /* Parameterized constructor with 
+	    * three integer arguments
+	    */
+	   Box1(double l,double b,double h)
+	   {
+	   		length=l;
+	   		breadth=b;
+	   		height=h;
+	   }
+	   
+		 //function volume
+	   double volume()
+	   {
+		   return length*breadth*height;
+	   }
+}
+public class Box
+{
+		   public static void main(String args[])
+		   {
+			   // This will invoke the constructor 
+			   
+			   Box1 b = new Box1(5,2,10);
+			   
+			   double vol;
+			   vol=b.volume();
+			   System.out.println("Volume of box is :"+vol);
+		   }
+} 
+
+
